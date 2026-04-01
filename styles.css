@@ -1,0 +1,229 @@
+:root {
+  --pearl-cream: #f3eee6;
+  --shimmer-cream: #eae2d6;
+  --burgundy: #6a1e33;
+  --maroon: #4a1423;
+  --olive: #5f674a;
+  --charcoal: #2b2624;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: linear-gradient(160deg, var(--charcoal), #1e1a19 50%, var(--maroon));
+  color: var(--pearl-cream);
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(243, 238, 230, 0.25);
+}
+
+.brand {
+  color: var(--pearl-cream);
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+nav a {
+  color: var(--pearl-cream);
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  border-color: rgba(243, 238, 230, 0.45);
+}
+
+.rsvp-btn {
+  background: var(--pearl-cream);
+  color: var(--maroon);
+  font-weight: bold;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border: 1px solid rgba(243, 238, 230, 0.3);
+  background: rgba(17, 14, 14, 0.35);
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0.6rem 0;
+  font-size: clamp(2rem, 7vw, 4.5rem);
+}
+
+.script {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--shimmer-cream);
+}
+
+.date-line {
+  margin-top: 1rem;
+  letter-spacing: 0.06em;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn {
+  padding: 0.7rem 1.1rem;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid var(--pearl-cream);
+  background: var(--pearl-cream);
+  color: var(--maroon);
+  font-weight: 700;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--pearl-cream);
+}
+
+.card-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card,
+.page-card {
+  border: 1px solid rgba(243, 238, 230, 0.3);
+  padding: 1rem;
+  background: rgba(17, 14, 14, 0.4);
+}
+
+.text-link {
+  color: var(--shimmer-cream);
+}
+
+.page {
+  max-width: 850px;
+}
+
+.page h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.list {
+  padding-left: 1.1rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid rgba(243, 238, 230, 0.25);
+  color: var(--shimmer-cream);
+}
+
+.faq-item {
+  border: 1px solid rgba(243, 238, 230, 0.3);
+  margin: 0.75rem 0;
+}
+
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: var(--pearl-cream);
+  border: none;
+  padding: 0.8rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.faq-a {
+  display: none;
+  padding: 0 0.8rem 0.8rem;
+  color: var(--shimmer-cream);
+}
+
+.faq-item.open .faq-a {
+  display: block;
+}
+
+.form-row {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  padding: 0.55rem;
+  border: 1px solid rgba(243, 238, 230, 0.45);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--pearl-cream);
+}
+
+button {
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--pearl-cream);
+  background: var(--pearl-cream);
+  color: var(--maroon);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--pearl-cream);
+}
+
+.hidden {
+  display: none;
+}
